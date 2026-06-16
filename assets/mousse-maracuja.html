@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro HTMl estilizado...</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+        :root {
+            --cor-fundo: #FFFDE7;
+            --cor-texto: #3E2723;
+            --cor-destaque-tema: #FF8F00;
+        }
+
+        body {
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            font-family: 'PT Serif', serif;
+            padding: 20px;
+        }
+
+        article {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+            border: 2px solid var(--cor-destaque-tema);
+            border-radius: 5px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            line-height: 1.6;
+        }
+
+        mark {
+            background-color: var(--cor-destaque-tema);
+            color: var(--cor-fundo);
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <article>
+            <h1>Mousse de Maracujá</h1>
+            <p>Uma sobremesa deliciosa e <mark>fácil</mark> de fazer.</p>
+            
+            <h2>Ingredientes</h2>
+            <ul>    
+                <li>1 lata de leite condensado</li>
+                <li>1 lata de creme de leite</li>
+                <li>1 lata de suco de maracujá concentrado</li>
+                <li>1/2 xícara de H<sup>2</sup>O</li>
+            </ul>
+            
+            <h2>Modo de Preparo</h2>
+            <ol>
+                <li>Em um liquidificador, bata o leite condensado, o creme de leite e o suco de maracujá até obter uma mistura homogênea.</li>
+                <li>Se estiver <i>muito densa</i>, adicione mais água e bata por mais <b>alguns segundos.</b></li>
+                <li>Despeje a mousse em taças individuais e leve à geladeira por cerca de 4 horas ou até que esteja firme.</li>
+                <li>Sirva gelado e bom apetite!</li>
+            </ol>
+            
+            <p><q>Receita muito boa, eu recomendo.</q></p>
+        </article>
+    </main>
+
+</body>
+</html>

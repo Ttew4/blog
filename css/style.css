@@ -1,0 +1,349 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.pt-serif-regular {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-serif-bold {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-serif-regular-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pt-serif-bold-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Temas */
+
+
+
+:root {
+  --cor-fundo:           #ffffff;
+  --cor-texto:           rgb(21, 21, 21);
+  --cor-menu:            rgb(18, 156, 210);
+  --cor-texto-menu:      rgb(255, 255, 255);
+  --cor-destaque-tema:   rgb(176, 176, 176);
+  --cor-destaque:        #0071cd;
+  --cor-destaque-sombra: rgba(4, 84, 204, 0.377);
+}
+
+:root.tema-kuromi {
+  --cor-fundo:           #1e1e1e;
+  --cor-texto:           #a3629f;
+  --cor-menu:            #914186;
+  --cor-texto-menu:      #e77ed0;
+  --cor-destaque-tema:   #b72dda;
+  --cor-destaque:        #c27cb5;
+  --cor-destaque-sombra: #c27cb574;
+}
+
+:root.tema-mint {
+  --cor-fundo:           hsl(87, 18%, 12%);
+  --cor-texto:           #8c969e;
+  --cor-menu:            hsl(86, 51%, 37%);
+  --cor-texto-menu:      hsl(100, 76%, 13%);
+  --cor-destaque-tema:   hsl(90, 100%, 50%);
+  --cor-destaque:        hsl(90, 67%, 50%);
+  --cor-destaque-sombra: hsla(90, 67%, 50%, 0.481);
+}
+
+:root.tema-amd {
+  --cor-fundo:           #201e1e;
+  --cor-texto:           #FFFF;
+  --cor-menu:            #68080C;
+  --cor-texto-menu:      #970c11;
+  --cor-destaque-tema:   #ED1C24;
+  --cor-destaque:        hsl(29, 86%, 44%);
+  --cor-destaque-sombra: #cf6c0f70;
+}
+/*dark*/
+:root.dark-mode{
+  --cor-fundo:           #292929;
+  --cor-texto:           rgb(194, 189, 189);
+  --cor-menu:            rgb(9, 83, 112);
+  --cor-texto-menu:      rgb(8, 134, 151);
+  --cor-destaque-tema:   rgb(38, 38, 99);
+  --cor-destaque:        #00065f;
+  --cor-destaque-sombra: #00065f75;
+}
+
+:root.tema-kuromi.dark-mode {
+  --cor-fundo:           #000000;
+  --cor-texto:           #461852;
+  --cor-menu:            #5f2b586a;
+  --cor-texto-menu:      #4f2b47;
+  --cor-destaque-tema:   #3b0749;
+  --cor-destaque:        #4a2755;
+  --cor-destaque-sombra: #4a275575;
+}
+
+:root.tema-mint.dark-mode {
+  --cor-fundo:           hsl(0, 0%, 0%);
+  --cor-texto:           #575a5d;
+  --cor-menu:            hsl(85, 54%, 22%);
+  --cor-texto-menu:      hsl(100, 87%, 9%);
+  --cor-destaque-tema:   hsl(90, 100%, 13%);
+  --cor-destaque:        hsl(89, 64%, 14%);
+  --cor-destaque-sombra: hsla(90, 64%, 14%, 0.46);
+}
+
+:root.tema-amd.dark-mode {
+  --cor-fundo:           #000000;
+  --cor-texto:           rgb(194, 189, 189);
+  --cor-menu:            #3a0406;
+  --cor-texto-menu:      #62080b;
+  --cor-destaque-tema:   #43090b;
+  --cor-destaque:        hsl(29, 84%, 23%);
+  --cor-destaque-sombra: hsla(29, 85%, 23%, 0.422);
+}
+
+/* CSS */
+
+header {
+    font: 1em 'Black Ops One';
+    background-color: var(--cor-menu);
+    border-bottom: 2px solid var(--cor-destaque-tema);
+    padding: 10px;
+}
+header nav{
+    color: var(--cor-texto-menu);
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+header nav a{
+    display: inline-block;
+    border: 1px solid var(--cor-destaque-sombra);
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+    padding: 6px 14px;
+    margin: 4px;
+    border-radius: 4px;
+}
+header nav a:hover{
+    color: var(--cor-destaque);
+}
+
+button:hover{
+    color: rgb(1,1,1);
+}
+
+button {
+  font: 1.2em 'Black Ops One';
+  padding: 6px 14px;
+  margin: 4px;
+  cursor: pointer;
+  background-color: var(--cor-menu);
+  color: var(--cor-botao-texto);
+  border: 1px solid var(--cor-destaque-sombra);
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--cor-fundo);
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    z-index: 10;
+    border: 2px solid var(--cor-destaque-tema);
+    border-radius: 5px;
+    padding: 10px;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dropdown-content.mostrar {
+    display: flex;
+}
+
+.theme-option {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--cor-texto);
+    width: 100%;
+    text-align: left;
+    padding: 8px;
+    border-radius: 4px;
+    font: 1rem 'PT Serif';
+}
+
+.theme-option:hover {
+    background-color: var(--cor-destaque-sombra);
+    border: 1px solid var(--cor-destaque);
+    color: var(--cor-texto);
+}
+
+.theme-option img {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Main */
+
+
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin:0;
+}
+
+body main{ 
+    flex:1;
+    padding: 0 5% 0 5%;
+}
+
+body article{
+    font: 1rem 'PT Serif';
+    align-items: center;
+    padding: 6px 14px;
+    margin: 4px 25% 0;
+    border: 2px solid var(--cor-destaque-tema);
+    border-radius: 5px;
+}
+
+body article ul{
+    color:var(--cor-destaque-tema);
+    font-size: 1.2rem;
+}
+
+body article ul a{
+    font-size: large;
+    text-decoration: none;
+    font:900;
+}
+
+body article img{
+width: 25%;
+height: 25%;
+display: flex;
+justify-content: center;
+
+}
+
+body article h2,p{
+    padding: 1%;
+}
+
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-grupo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-grupo input, 
+.form-grupo textarea {
+    padding: 10px;
+    border: 1px solid var(--cor-destaque-tema);
+    border-radius: 5px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'PT Serif', serif;
+    font-size: 1rem;
+}
+
+.form-grupo input:focus, 
+.form-grupo textarea:focus {
+    outline: none;
+    border-color: var(--cor-destaque);
+    box-shadow: 0 0 5px var(--cor-destaque-sombra);
+}
+
+.form-grupo textarea {
+    resize: vertical;
+}
+
+.formulario-contato button {
+    align-self: flex-start;
+    padding: 10px 20px;
+}
+
+.like-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--cor-destaque-sombra);
+}
+
+.btn-like {
+    background-color: transparent;
+    color: var(--cor-texto);
+    border: 1px solid var(--cor-destaque);
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-like:hover {
+    background-color: var(--cor-destaque-sombra);
+    color: var(--cor-texto);
+}
+
+.like-count {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--cor-destaque);
+}
+
+footer {
+    padding: 15px;
+    background-color: var(--cor-menu);
+    border-top: 2px solid var(--cor-destaque-tema);
+    color: var(--cor-texto);
+    font-family: 'PT Serif', serif;
+    font-size: 1rem;
+    margin-top: 15px;
+}
