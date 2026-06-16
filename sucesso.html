@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem Enviada</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .sucesso-container {
+            text-align: center;
+            margin-top: 50px;
+            padding: 40px;
+            border: 2px solid var(--cor-destaque-tema);
+            border-radius: 8px;
+            background-color: transparent;
+        }
+        .sucesso-icone {
+            font-size: 4rem;
+            color: var(--cor-destaque);
+            margin-bottom: 20px;
+        }
+        .sucesso-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: var(--cor-menu);
+            color: var(--cor-texto-menu);
+            border: 1px solid var(--cor-destaque-sombra);
+            border-radius: 4px;
+            font-family: 'Black Ops One', cursive;
+            transition: background-color 0.2s;
+        }
+        .sucesso-btn:hover {
+            background-color: var(--cor-destaque);
+            color: rgb(1,1,1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="dropdown">
+            <button id="btn-dark">☾</button>
+            <button id="btn-ttew">Ttew Blog</button>
+            <button id="btn-menos">A-</button> 
+            <button id="btn-mais">A+</button>           
+
+            <div id="theme-menu" class="dropdown-content">
+                <button class="theme-option" onclick="mudarTema('padrao')">
+                    <img src="assets/intel--600.png" width="50" height="50">
+                    <span>Tema Intel</span>
+                </button>
+                <button class="theme-option" onclick="mudarTema('tema-kuromi')">
+                    <img src="assets/Kuromi_render.png" width="50" height="50">
+                    <span>Tema Kuromi</span>
+                </button>
+                <button class="theme-option" onclick="mudarTema('tema-mint')">
+                    <img src="assets/linux-mint.png" width="50" height="50">
+                    <span>Tema Mint</span>
+                </button>
+                <button class="theme-option" onclick="mudarTema('tema-amd')">
+                    <img src="assets/amd_logo_icon_181318.webp" width="50" height="50">
+                    <span>Tema AMD</span>
+                </button>
+            </div>
+        </div>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">Sobre</a>
+        <a href="contact.html">Contato</a>
+        <a href="recipes.html">Receitas</a>
+        <a href="curriculum.html">Currículo</a>
+    </nav>
+    </header>
+
+    <main>
+        <article class="sucesso-container">
+            <div class="sucesso-icone">✅</div>
+            <h2>Mensagem Enviada com Sucesso!</h2>
+            <p>Obrigado por entrar em contato. Responderemos o mais breve possível.</p>
+            <a href="index.html" class="sucesso-btn">Voltar para a Home</a>
+        </article>
+    </main>
+
+    <footer>
+        <div id="data-hora">...</div>
+    </footer>
+<script src="js/scripts.js"></script>
+</body>
+</html>

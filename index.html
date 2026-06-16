@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Blog</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="dropdown">
+            <button id="btn-dark">☾</button>
+            <button id="btn-ttew">Ttew Blog</button>
+            <button id="btn-menos">A-</button> 
+            <button id="btn-mais">A+</button>           
+
+            <div id="theme-menu" class="dropdown-content">
+                <button class="theme-option" onclick="mudarTema('padrao')">
+                    <img src="assets/intel--600.png" width="50" height="50">
+                    <span>Tema Intel</span>
+                </button>
+                <button class="theme-option" onclick="mudarTema('tema-kuromi')">
+                    <img src="assets/Kuromi_render.png" width="50" height="50">
+                    <span>Tema Kuromi</span>
+                </button>
+                <button class="theme-option" onclick="mudarTema('tema-mint')">
+                    <img src="assets/linux-mint.png" width="50" height="50">
+                    <span>Tema Mint</span>
+                </button>
+                <button class="theme-option" onclick="mudarTema('tema-amd')">
+                    <img src="assets/amd_logo_icon_181318.webp" width="50" height="50">
+                    <span>Tema AMD</span>
+                </button>
+            </div>
+        </div>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">Sobre</a>
+        <a href="contact.html">Contato</a>
+        <a href="recipes.html">Receitas</a>
+        <a href="curriculum.html">Currículo</a>
+    </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Ele voltou...</h2>
+            <img src="assets/michael-jackson-moonwalker.gif"></img>
+            <p>Robô controlado por sistema de IA <strong>afirma</strong> ser reincarnação de Michael Jackson.</p>
+            <div class="like-container">
+                <button class="btn-like" onclick="darLike('post1')">👍 Like</button>
+                <span id="contador-post1" class="like-count"></span>
+            </div>
+        </article>
+
+        <article>
+            <h2>Futuro da reciclagem?</h2>
+            <img src="assets/E-waste-Header-e1767646879708.webp"></img>
+            <p>Jovem cria site para reunir estudantes e inventores a fim de reciclar <i>lixo eletrônico</i>.</p>
+            <a href="http://ttew4.github.io/EWASTE/index.html" target="_blank">Saiba mais</a>
+            <div class="like-container">
+                <button class="btn-like" onclick="darLike('post2')">👍 Like</button>
+                <span id="contador-post2" class="like-count"></span>
+            </div>
+        </article>
+
+        <article>
+            <h2>#PLAYSTATION2</h2>
+            <img src="assets/684646526_18081792074389285_3487135328184964380_n.webp"></img>
+            <p>O PlayStation 2 é o console mais vendido da <strong>história</strong>, com mais de 160 milhões de unidades.</p>
+            <div class="like-container">
+                <button class="btn-like" onclick="darLike('post3')">👍 Like</button>
+                <span id="contador-post3" class="like-count"></span>
+            </div>
+        </article>
+
+        <article>
+            <h2>WINRAR</h2>
+            <img src="assets/rar-archive_80.png"></img>
+            <p>O <i>WinRAR</i> foi lançado em 1995. Naquela época, a internet era completamente diferente e a capacidade dos discos rígidos era muito menor do que hoje. A compressão de arquivos, portanto, desempenhava um papel muito mais importante do que hoje. </p>
+            <div class="like-container">
+                <button class="btn-like" onclick="darLike('post4')">👍 Like</button>
+                <span id="contador-post4" class="like-count"></span>
+            </div>
+        </article>
+
+        <article>
+            <h2>Inicio</h2>
+            <img src="assets/logo-color-horizontal-complemento.png"></img>
+            <p><strong>Mateus Camargo Pinheiro</strong> começou a estudar na UPF em 2026.</p>
+            <div class="like-container">
+                <button class="btn-like" onclick="darLike('post5')">👍 Like</button>
+                <span id="contador-post5" class="like-count"></span>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div id="data-hora">...</div>
+    </footer>
+<script src="js/scripts.js"></script>
+</body>
+</html>

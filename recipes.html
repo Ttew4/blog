@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="dropdown">
+            <button id="btn-dark">☾</button>
+            <button id="btn-ttew">Ttew Blog</button>
+            <button id="btn-menos">A-</button> 
+            <button id="btn-mais">A+</button>           
+
+            <div id="theme-menu" class="dropdown-content">
+                <button class="theme-option" onclick="mudarTema('padrao')">
+                    <img src="assets/intel--600.png" width="50" height="50">
+                    <span>Tema Intel</span>
+                </button>
+                <button class="theme-option" onclick="mudarTema('tema-kuromi')">
+                    <img src="assets/Kuromi_render.png" width="50" height="50">
+                    <span>Tema Kuromi</span>
+                </button>
+                <button class="theme-option" onclick="mudarTema('tema-mint')">
+                    <img src="assets/linux-mint.png" width="50" height="50">
+                    <span>Tema Mint</span>
+                </button>
+                <button class="theme-option" onclick="mudarTema('tema-amd')">
+                    <img src="assets/amd_logo_icon_181318.webp" width="50" height="50">
+                    <span>Tema AMD</span>
+                </button>
+            </div>
+        </div>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">Sobre</a>
+        <a href="contact.html">Contato</a>
+        <a href="recipes.html">Receitas</a>
+        <a href="curriculum.html">Currículo</a>
+    </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Minhas Receitas Favoritas</h2>
+            <p>Selecione uma receita abaixo para ver os detalhes:</p>
+            <ul style="margin-left: 20px; line-height: 1.8;">
+                <li>
+                    <a href="assets/mousse-maracuja.html" target="_blank" style="color:var(--cor-destaque)">Mousse de Maracujá</a>
+                </li>
+                <li> <!-- Não sabia se deveria deixa link para as outras receitas como a do Mousse...-->
+                    <a>Yakissoba Tradicional</a>
+                </li>
+                <li>
+                    <a>Nachos Mexicanos com molho de Carne</a>
+                </li>
+                <li>
+                    <a>Bolo de Cenoura com cobertura de Chocolate</a>
+                </li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <div id="data-hora">...</div>
+    </footer>
+<script src="js/scripts.js"></script>
+</body>
+</html>

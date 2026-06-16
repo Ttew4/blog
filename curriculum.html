@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="dropdown">
+            <button id="btn-dark">☾</button>
+            <button id="btn-ttew">Ttew Blog</button>
+            <button id="btn-menos">A-</button> 
+            <button id="btn-mais">A+</button>           
+
+            <div id="theme-menu" class="dropdown-content">
+                <button class="theme-option" onclick="mudarTema('padrao')">
+                    <img src="assets/intel--600.png" width="50" height="50">
+                    <span>Tema Intel</span>
+                </button>
+                <button class="theme-option" onclick="mudarTema('tema-kuromi')">
+                    <img src="assets/Kuromi_render.png" width="50" height="50">
+                    <span>Tema Kuromi</span>
+                </button>
+                <button class="theme-option" onclick="mudarTema('tema-mint')">
+                    <img src="assets/linux-mint.png" width="50" height="50">
+                    <span>Tema Mint</span>
+                </button>
+                <button class="theme-option" onclick="mudarTema('tema-amd')">
+                    <img src="assets/amd_logo_icon_181318.webp" width="50" height="50">
+                    <span>Tema AMD</span>
+                </button>
+            </div>
+        </div>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">Sobre</a>
+        <a href="contact.html">Contato</a>
+        <a href="recipes.html">Receitas</a>
+        <a href="curriculum.html">Currículo</a>
+    </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Mateus Camargo Pinheiro</h2>
+            <p><strong>Objetivo Profissional:</strong> Desenvolvedor Full-Stack</p>
+            <p><strong>Contato:</strong> 214752@upf.br</p>
+        </article>
+
+        <article>
+            <h2>Formação Acadêmica</h2>
+            <table border="1" style="width: 100%; border-collapse: collapse; text-align: left; margin-top: 10px;">
+                <thead>
+                    <tr style="background-color: var(--cor-destaque-sombra);">
+                        <th style="padding: 8px;">Instituição</th>
+                        <th style="padding: 8px;">Curso</th>
+                        <th style="padding: 8px;">Período</th>
+                        <th style="padding: 8px;">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 8px;">Universidade de Passo Fundo</td>
+                        <td style="padding: 8px;">Ciências da Computação</td>
+                        <td style="padding: 8px;">2026</td>
+                        <td style="padding: 8px;">Em procedimento</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article>
+            <h2>Experiência Prática e Projetos</h2>
+            <ul>
+                <li>
+                    <strong>Desenvolvimento de Site:</strong>
+                    <p>Criei um site semelhante a um fórum voltado a reciclagem de lixo eletrônico e também um blog, mostrando conhecimento em HTML5, CSS, Javascript para desenvolvimento de sites.</p>
+                </li>
+                <li>
+                    <strong>Programas em Python:</strong>
+                    <p>Criação de diversos programas básicos em Python para cálculos, estruturas de repetição, banco de dados, listas e modulação.</p>
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Competências Técnicas</h2>
+            <ul>
+                <li><strong>Site:</strong> HTML5, CSS, JS (básico), a fim de desenvolver um site.</li>
+                <li><strong>Programação:</strong> Conhecimento em C,C++ e Python, para desenvolvimento de programas e aplicação em robótica.</li>
+                <li><strong>Robótica:</strong> Conhecimento em arduínos, microcontroladores, componentes eletrônicos e circuitos embarcados.</li>
+
+            </ul>
+        </article>
+    </main>
+
+
+<footer>
+        <div id="data-hora">...</div>
+    </footer>
+<script src="js/scripts.js"></script>
+</body>
+</html>
